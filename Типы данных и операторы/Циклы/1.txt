@@ -1,0 +1,11 @@
+Бесконечный цикл с while:
+while (true) {
+    System.out.println("Infinite loop with while");
+}
+
+Бесконечный цикл с do-while:
+do {
+    System.out.println("Infinite loop with do-while");
+} while (true);
+
+В данном случае сначала выполняется тело цикла, затем проверяется условие. Поскольку условие всегда истинно (true), цикл будет повторяться бесконечно.
