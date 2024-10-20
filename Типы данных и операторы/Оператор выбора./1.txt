@@ -1,0 +1,66 @@
+Целочисленные типы:
+int num = 2;
+switch (num) {
+    case 1:
+        System.out.println("One");
+        break;
+    case 2:
+        System.out.println("Two");
+        break;
+    case 3:
+        System.out.println("Three");
+        break;
+    default:
+        System.out.println("Unknown value");
+}
+
+Перечисления:
+enum Day {
+    MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY
+}
+Day day = Day.MONDAY;
+switch (day) {
+    case MONDAY:
+        System.out.println("Start of the week");
+        break;
+    case FRIDAY:
+        System.out.println("End of the workweek");
+        break;
+    case SUNDAY:
+        System.out.println("Weekend day");
+        break;
+    default:
+        System.out.println("Working day");
+}
+
+Типы-обёртки для целых чисел:
+Integer num = 3;
+switch (num) {
+    case 1:
+        System.out.println("One");
+        break;
+    case 2:
+        System.out.println("Two");
+        break;
+    case 3:
+        System.out.println("Three");
+        break;
+    default:
+        System.out.println("Unknown value");
+}
+
+Строки:
+String animal = "Dog";
+switch (animal) {
+    case "Cat":
+        System.out.println("This is a cat");
+        break;
+    case "Dog":
+        System.out.println("This is a dog");
+        break;
+    case "Bird":
+        System.out.println("This is a bird");
+        break;
+    default:
+        System.out.println("Unknown animal");
+}
