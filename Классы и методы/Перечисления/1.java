@@ -1,9 +1,9 @@
 // Перечисление для представления различных видов фруктов
 public enum Fruit {
-    APPLE(1.5, "A red or green fruit that is sweet and crisp."),
-    BANANA(0.5, "A long yellow fruit that is soft and sweet."),
-    ORANGE(1.0, "A round citrus fruit with a tough skin and juicy flesh."),
-    GRAPE(2.0, "A small, round fruit that grows in bunches and is often purple or green.");
+    APPLE(1.5, "Красный или зеленый фрукт."),
+    BANANA(0.5, "Длинный желтый фрукт."),
+    ORANGE(1.0, "Круглый цитрусовый фруктh."),
+    GRAPE(2.0, "Маленький, круглый фрукт.");
 
     private final double price; // цена фрукта
     private final String description; // описание фрукта
