@@ -1,0 +1,36 @@
+1. Инициализация в конструкторе:
+public class A {
+    public final int a;
+
+    // Конструктор
+    public A(int value) {
+        this.a = value;
+    }
+}
+2. Инициализация с помощью блока инициализации:
+public class A {
+    public final int a;
+
+    // Блок инициализации
+    {
+        a = 20;
+    }
+}
+3. Инициализация при объявлении:
+public class A {
+    public final int a = 30;
+}
+4. Инициализация через конструкторы с перегрузкой:
+public class A {
+    public final int a;
+
+    // Конструктор по умолчанию
+    public A() {
+        this.a = 0; // значение по умолчанию
+    }
+
+    // Конструктор с параметром
+    public A(int value) {
+        this.a = value;
+    }
+}
