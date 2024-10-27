@@ -1,0 +1,57 @@
+1. Аннотация @Override
+Указывает, что метод переопределяет метод суперкласса. Это помогает компилятору проверить, действительно ли метод является переопределением, и может предотвратить ошибки.
+class Parent {
+    void display() {
+        System.out.println("Метод суперкласса");
+    }
+}
+
+class Child extends Parent {
+    @Override
+    void display() {
+        System.out.println("Метод подкласса");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Child child = new Child();
+        child.display(); // Выведет: Метод подкласса
+    }
+}
+
+2.Аннотация @Deprecated
+Указывает, что элемент (класс, метод, поле) устарел и не должен использоваться.
+Это может быть связано с тем, что элемент был заменен более новой версией или из соображений безопасности.
+class OldClass {
+    @Deprecated
+    void oldMethod() {
+        System.out.println("Устаревший метод");
+    }
+    
+    void newMethod() {
+        System.out.println("Новый метод");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        OldClass obj = new OldClass();
+        obj.oldMethod(); // Выведет: Устаревший метод
+        obj.newMethod(); // Выведет: Новый метод
+    }
+}
+
+3. Аннотация @SuppressWarnings
+Используется для подавления определенных предупреждений компилятора, таких как предупреждения о неиспользуемых переменных, необработанных исключениях и другие. 
+Это полезно для повышения чистоты кода и уменьшения «шумов» от компилятора.
+import java.util.ArrayList;
+
+public class Main {
+    @SuppressWarnings("unchecked")
+    public static void main(String[] args) {
+        ArrayList list = new ArrayList(); // Использование сырых типов
+        list.add("Hello");
+        System.out.println(list.get(0));
+    }
+}
